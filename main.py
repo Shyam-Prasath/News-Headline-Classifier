@@ -6,7 +6,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.metrics import classification_report
 
 # 📄 Load dataset (USE RAW STRING FOR WINDOWS PATH)
-df = pd.read_json(r"C:\Users\SHYAM PRASATH\OneDrive\Desktop\Nigga\Prajan Project\News_Category_Dataset_v3.json", lines=True)
+df = pd.read_json(r"../News_Category_Dataset_v3.json", lines=True)
 df = df[['headline', 'category']]
 
 # 🔁 Simplify categories
