@@ -12,7 +12,7 @@ st.markdown("Classifies news headlines into topics like Politics, Sports, Entert
 # Load and prepare data
 @st.cache_data
 def load_and_train_model():
-    df = pd.read_json(r"C:\Users\SHYAM PRASATH\OneDrive\Desktop\Nigga\Prajan Project\News_Category_Dataset_v3.json", lines=True)
+    df = pd.read_json(r"../News_Category_Dataset_v3.json", lines=True)
     df = df[['headline', 'category']]
 
     category_map = {
